@@ -1,0 +1,49 @@
+#Template information section
+name: msl_swift_viper
+summary: It creates viper scene files for swift
+author: Veronika Gaynetdinova
+version: 1.0.0
+license: MIT
+
+# The declarations for code files
+code_files:
+#Scene Protocols
+- {name: Protocols.swift, path: Code/protocols.swift.liquid}
+
+#View layer
+- {name: View/ViewController.swift, path: Code/View/viewcontroller.swift.liquid}
+- {name: View/ViewController.xib, path: Code/View/viewcontroller.xib.liquid}
+
+# Presenter layer
+- {name: Presenter.swift, path: Code/presenter.swift.liquid}
+
+# Interactor layer
+- {name: Interactor.swift, path: Code/interactor.swift.liquid}
+
+# Builder layer
+- {name: Builder.swift, path: Code/builder.swift.liquid}
+
+# Configurator
+- {name: Configurator.swift, path: Code/configurator.swift.liquid}
+
+
+# The declarations for test files
+test_files:
+
+# Configurators tests
+- {name: Configurator/ConfiguratorTests.swift, path: Tests/Configurator/configurator_tests.swift.liquid}
+
+# View tests
+- {name: View/ViewTests.swift, path: Tests/View/view_tests.swift.liquid}
+
+# Interactor tests
+- {name: Interactor/InteractorTests.swift, path: Tests/Interactor/interactor_tests.swift.liquid}
+
+# Presenter tests
+- {name: Presenter/PresenterTests.swift, path: Tests/Presenter/presenter_tests.swift.liquid}
+
+# Builder tests
+- {name: Builder/BuilderTests.swift, path: Tests/Builder/builder_tests.swift.liquid}
+
+# Template dependencies
+dependencies:

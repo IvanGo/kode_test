@@ -1,0 +1,1087 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D79586DB5E23DC51F7499EA /* Pods_kode_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACAFC705171F08DA623101C /* Pods_kode_testUITests.framework */; };
+		0F7BB23BDC66F66BE6CD99F4 /* CitySelectionConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440591D2E08C3E4CB59CD5D4 /* CitySelectionConfiguratorTests.swift */; };
+		20A8E9C1989D3C7F46EA6DBB /* OrderSetupInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A71343665A84861EF93D906 /* OrderSetupInteractor.swift */; };
+		21DF34209451525580D0C44F /* OrderSetupConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCBDCA14B82895602046E0B /* OrderSetupConfigurator.swift */; };
+		2579407ADB762603E3F63391 /* WeatherInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC3C33E1695FAB175F0E12 /* WeatherInteractorTests.swift */; };
+		305CAA7653C9CC4AEDCAEA1F /* WeatherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34B0F08B2EBB6FD74A3AA5AB /* WeatherViewController.xib */; };
+		45AB70043769EC13518F07B2 /* OrderSetupViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857AAA9865F4CA73FF35A88A /* OrderSetupViewTests.swift */; };
+		4CC0366FB6B89492B325E78D /* OrderSetupBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E57653D5018EFF7DCCFABD1 /* OrderSetupBuilder.swift */; };
+		4DFCCFE008CB2C507C190940 /* WeatherBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8F955763C631326360D45F /* WeatherBuilder.swift */; };
+		5A83C1D2BA9696819CD198E3 /* OrderSetupInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADCBA0DC580880593461FC9 /* OrderSetupInteractorTests.swift */; };
+		63CCBDE0BE9A5EC77DC357C1 /* Pods_kode_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5C83E283CAEA06C798C891 /* Pods_kode_test.framework */; };
+		67D17A70DCABA81DAFBFCECC /* CitySelectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703E1DA4F0925270086BF53 /* CitySelectionInteractor.swift */; };
+		708C769F6D100F57B3B0678A /* WeatherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA06528A33EF11E98E7F371 /* WeatherPresenter.swift */; };
+		867BCF2A2D230E8D986864E5 /* CitySelectionBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0B2C0B070CD4FB8CE49B63 /* CitySelectionBuilderTests.swift */; };
+		89651A05EE37DB29D2D50221 /* CitySelectionConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1346BB69CD5FBC43EDDA7A89 /* CitySelectionConfigurator.swift */; };
+		8DC8AD39167FAF06FAFFD12E /* WeatherPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428C064E76EB18C84D1A208 /* WeatherPresenterTests.swift */; };
+		9856EB00D91FB35DAFC36BE2 /* WeatherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B007064869C0A0BCBA0E2C21 /* WeatherInteractor.swift */; };
+		9CB19D6F663EAB6E1A96A64C /* CitySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7790181B3573B92E720FC2DA /* CitySelectionViewController.swift */; };
+		9D2874782AE3F3BE5AD4D0B6 /* OrderSetupPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB95DAF9D8CE86F9528D056 /* OrderSetupPresenterTests.swift */; };
+		A3C4ABAED04E35D30F2D3D12 /* CitySelectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115ADACCFE62A3386201C493 /* CitySelectionViewTests.swift */; };
+		C548AFFDDE885D3C339E03A2 /* Pods_kode_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89672EA436626FB1DDB86873 /* Pods_kode_testTests.framework */; };
+		C795AD63564499FD8E9DD275 /* OrderSetupProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BBB8E91A42C8285FE412F2 /* OrderSetupProtocols.swift */; };
+		CC87B660A26D1DCDC4C51A26 /* CitySelectionPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EACD39F83EAFB162DA0450 /* CitySelectionPresenterTests.swift */; };
+		CC8A30F5BDEAEEE500ECAB40 /* CitySelectionInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295BFC361BC89CEDF4A42317 /* CitySelectionInteractorTests.swift */; };
+		CF2E857E1E98011000B53495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E857D1E98011000B53495 /* AppDelegate.swift */; };
+		CF2E85851E98011000B53495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2E85841E98011000B53495 /* Assets.xcassets */; };
+		CF2E85931E98011000B53495 /* kode_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E85921E98011000B53495 /* kode_testTests.swift */; };
+		CF2E859E1E98011000B53495 /* kode_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E859D1E98011000B53495 /* kode_testUITests.swift */; };
+		CF2E85AD1E98039500B53495 /* StyleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E85AC1E98039500B53495 /* StyleExtensions.swift */; };
+		CF2E85B01E98CA9300B53495 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E85AF1E98CA9300B53495 /* Router.swift */; };
+		CF2E85B21E990F7500B53495 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2E85B11E990F7500B53495 /* LaunchScreen.xib */; };
+		CF2E85B51E99168300B53495 /* OrderSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E85B31E99168300B53495 /* OrderSetupViewController.swift */; };
+		CF2E85B61E99168300B53495 /* OrderSetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2E85B41E99168300B53495 /* OrderSetupViewController.xib */; };
+		CF2E85B91E9A403200B53495 /* PassengerStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E85B81E9A403200B53495 /* PassengerStepper.swift */; };
+		D1F5CACB61403530CCCEA3BD /* CitySelectionProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1AFE8D7DF0D05DC1305C97 /* CitySelectionProtocols.swift */; };
+		D48EB0BB7AC950FBDC97179A /* CitySelectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C33BCFD732FDA71A60B10 /* CitySelectionPresenter.swift */; };
+		D5032311AB12C6660469245B /* OrderSetupConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290A5A0CB8E5760A5857D577 /* OrderSetupConfiguratorTests.swift */; };
+		D733C381B0299CA28258744D /* WeatherConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E40311EEE9ED539F1220C0F /* WeatherConfigurator.swift */; };
+		D82B95E5D884FC15F60ECABA /* CitySelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DB078457CD49724DDB2B802 /* CitySelectionViewController.xib */; };
+		DA788F41798D71D82D9F76CE /* WeatherViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE393E80B668D9D2AF419941 /* WeatherViewTests.swift */; };
+		DC7100E52D84D63BD9B5DEDF /* WeatherConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903301814DBEAC5AF14EE265 /* WeatherConfiguratorTests.swift */; };
+		DDD9FB5CC818E89090970AF1 /* WeatherBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4392BC62EDDA22D5A0F21A0 /* WeatherBuilderTests.swift */; };
+		E5E3D76F67622F249E4F82D7 /* WeatherProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D465E88C979A60DC544D0B7 /* WeatherProtocols.swift */; };
+		E720FC6CB433296DB169EAFC /* OrderSetupBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FBFBAEAF4517A2B6010BA /* OrderSetupBuilderTests.swift */; };
+		EBD953639CC50C3E33D58254 /* CitySelectionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B33A7D9760011DD1D25F46 /* CitySelectionBuilder.swift */; };
+		F8F94B78B6B9929BA9BD63B3 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BB9AA52A3EAA1A071EADD /* WeatherViewController.swift */; };
+		F9DD73B603C3DFDEEE661D6D /* OrderSetupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD8F7574D6643A4745B9014 /* OrderSetupPresenter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF2E858F1E98011000B53495 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF2E85721E98011000B53495 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF2E85791E98011000B53495;
+			remoteInfo = kode_test;
+		};
+		CF2E859A1E98011000B53495 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF2E85721E98011000B53495 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF2E85791E98011000B53495;
+			remoteInfo = kode_test;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0428C064E76EB18C84D1A208 /* WeatherPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherPresenterTests.swift; sourceTree = "<group>"; };
+		0A0DA935DFE66800209EF9BE /* Pods-kode_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kode_test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kode_test/Pods-kode_test.debug.xcconfig"; sourceTree = "<group>"; };
+		115ADACCFE62A3386201C493 /* CitySelectionViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CitySelectionViewTests.swift; sourceTree = "<group>"; };
+		1346BB69CD5FBC43EDDA7A89 /* CitySelectionConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CitySelectionConfigurator.swift; sourceTree = "<group>"; };
+		172A6B9B311D9FD673625BB4 /* Pods-kode_testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kode_testUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kode_testUITests/Pods-kode_testUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1A71343665A84861EF93D906 /* OrderSetupInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OrderSetupInteractor.swift; sourceTree = "<group>"; };
+		1E57653D5018EFF7DCCFABD1 /* OrderSetupBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OrderSetupBuilder.swift; sourceTree = "<group>"; };
+		22BBB8E91A42C8285FE412F2 /* OrderSetupProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OrderSetupProtocols.swift; sourceTree = "<group>"; };
+		257D7451D5586271D470A3C8 /* Pods-kode_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kode_test.release.xcconfig"; path = "Pods/Target Support Files/Pods-kode_test/Pods-kode_test.release.xcconfig"; sourceTree = "<group>"; };
+		2774441437FEC39CC4C28358 /* Pods-kode_testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kode_testTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kode_testTests/Pods-kode_testTests.release.xcconfig"; sourceTree = "<group>"; };
+		290A5A0CB8E5760A5857D577 /* OrderSetupConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OrderSetupConfiguratorTests.swift; sourceTree = "<group>"; };
+		295BFC361BC89CEDF4A42317 /* CitySelectionInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CitySelectionInteractorTests.swift; sourceTree = "<group>"; };
+		2F8F955763C631326360D45F /* WeatherBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherBuilder.swift; sourceTree = "<group>"; };
+		34B0F08B2EBB6FD74A3AA5AB /* WeatherViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = WeatherViewController.xib; sourceTree = "<group>"; };
+		371FBFBAEAF4517A2B6010BA /* OrderSetupBuilderTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OrderSetupBuilderTests.swift; sourceTree = "<group>"; };
+		3DB078457CD49724DDB2B802 /* CitySelectionViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = CitySelectionViewController.xib; sourceTree = "<group>"; };
+		3FB95DAF9D8CE86F9528D056 /* OrderSetupPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OrderSetupPresenterTests.swift; sourceTree = "<group>"; };
+		43E21B3C343176548F43CB6C /* Pods-kode_testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kode_testTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kode_testTests/Pods-kode_testTests.debug.xcconfig"; sourceTree = "<group>"; };
+		440591D2E08C3E4CB59CD5D4 /* CitySelectionConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CitySelectionConfiguratorTests.swift; sourceTree = "<group>"; };
+		4BD8F7574D6643A4745B9014 /* OrderSetupPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OrderSetupPresenter.swift; sourceTree = "<group>"; };
+		5CA06528A33EF11E98E7F371 /* WeatherPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherPresenter.swift; sourceTree = "<group>"; };
+		5E40311EEE9ED539F1220C0F /* WeatherConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherConfigurator.swift; sourceTree = "<group>"; };
+		642BB9AA52A3EAA1A071EADD /* WeatherViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		6C1AFE8D7DF0D05DC1305C97 /* CitySelectionProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CitySelectionProtocols.swift; sourceTree = "<group>"; };
+		6D465E88C979A60DC544D0B7 /* WeatherProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherProtocols.swift; sourceTree = "<group>"; };
+		75EACD39F83EAFB162DA0450 /* CitySelectionPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CitySelectionPresenterTests.swift; sourceTree = "<group>"; };
+		7790181B3573B92E720FC2DA /* CitySelectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CitySelectionViewController.swift; sourceTree = "<group>"; };
+		7A5C83E283CAEA06C798C891 /* Pods_kode_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kode_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		857AAA9865F4CA73FF35A88A /* OrderSetupViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OrderSetupViewTests.swift; sourceTree = "<group>"; };
+		89672EA436626FB1DDB86873 /* Pods_kode_testTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kode_testTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ADCBA0DC580880593461FC9 /* OrderSetupInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OrderSetupInteractorTests.swift; sourceTree = "<group>"; };
+		903301814DBEAC5AF14EE265 /* WeatherConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherConfiguratorTests.swift; sourceTree = "<group>"; };
+		96B33A7D9760011DD1D25F46 /* CitySelectionBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CitySelectionBuilder.swift; sourceTree = "<group>"; };
+		9ACAFC705171F08DA623101C /* Pods_kode_testUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kode_testUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D6C33BCFD732FDA71A60B10 /* CitySelectionPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CitySelectionPresenter.swift; sourceTree = "<group>"; };
+		9E0B2C0B070CD4FB8CE49B63 /* CitySelectionBuilderTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CitySelectionBuilderTests.swift; sourceTree = "<group>"; };
+		B007064869C0A0BCBA0E2C21 /* WeatherInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherInteractor.swift; sourceTree = "<group>"; };
+		B4392BC62EDDA22D5A0F21A0 /* WeatherBuilderTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherBuilderTests.swift; sourceTree = "<group>"; };
+		CE393E80B668D9D2AF419941 /* WeatherViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherViewTests.swift; sourceTree = "<group>"; };
+		CF2E857A1E98011000B53495 /* kode_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kode_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2E857D1E98011000B53495 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF2E85841E98011000B53495 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF2E85891E98011000B53495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2E858E1E98011000B53495 /* kode_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kode_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2E85921E98011000B53495 /* kode_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kode_testTests.swift; sourceTree = "<group>"; };
+		CF2E85941E98011000B53495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2E85991E98011000B53495 /* kode_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kode_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2E859D1E98011000B53495 /* kode_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kode_testUITests.swift; sourceTree = "<group>"; };
+		CF2E859F1E98011000B53495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2E85AC1E98039500B53495 /* StyleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyleExtensions.swift; path = Extensions/StyleExtensions.swift; sourceTree = "<group>"; };
+		CF2E85AF1E98CA9300B53495 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = Managers/Router.swift; sourceTree = "<group>"; };
+		CF2E85B11E990F7500B53495 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		CF2E85B31E99168300B53495 /* OrderSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderSetupViewController.swift; sourceTree = "<group>"; };
+		CF2E85B41E99168300B53495 /* OrderSetupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderSetupViewController.xib; sourceTree = "<group>"; };
+		CF2E85B81E9A403200B53495 /* PassengerStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PassengerStepper.swift; path = Controls/PassengerStepper.swift; sourceTree = "<group>"; };
+		E703E1DA4F0925270086BF53 /* CitySelectionInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CitySelectionInteractor.swift; sourceTree = "<group>"; };
+		EBCBDCA14B82895602046E0B /* OrderSetupConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OrderSetupConfigurator.swift; sourceTree = "<group>"; };
+		FABC205CBB72437DB2029777 /* Pods-kode_testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kode_testUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kode_testUITests/Pods-kode_testUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FDCC3C33E1695FAB175F0E12 /* WeatherInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherInteractorTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF2E85771E98011000B53495 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63CCBDE0BE9A5EC77DC357C1 /* Pods_kode_test.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2E858B1E98011000B53495 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C548AFFDDE885D3C339E03A2 /* Pods_kode_testTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2E85961E98011000B53495 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D79586DB5E23DC51F7499EA /* Pods_kode_testUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1445E7E3E6D5F333552EF8ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				115ADACCFE62A3386201C493 /* CitySelectionViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1C2A1A9718623ED4AA3F72C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				857AAA9865F4CA73FF35A88A /* OrderSetupViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2625B260E5D7E657DFFF78D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7790181B3573B92E720FC2DA /* CitySelectionViewController.swift */,
+				3DB078457CD49724DDB2B802 /* CitySelectionViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		30C024D84D1CADBD8C9BD8E2 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				F3699534FC1B89726716CB58 /* Configurator */,
+				E2744496C3E39975BFF4D676 /* View */,
+				DF3FB25AEBC31BA7F34DA641 /* Interactor */,
+				793E20DBA48E2B67A5FEA0AD /* Presenter */,
+				A62FE557CAED2D77098D55E3 /* Builder */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		3CFDEFBC63B98F1215FBA2BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				642BB9AA52A3EAA1A071EADD /* WeatherViewController.swift */,
+				34B0F08B2EBB6FD74A3AA5AB /* WeatherViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5B123C86C711F9A38B0ABEA6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF2E85B31E99168300B53495 /* OrderSetupViewController.swift */,
+				CF2E85B41E99168300B53495 /* OrderSetupViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		73A35275A18C7DA4D0059999 /* CitySelection */ = {
+			isa = PBXGroup;
+			children = (
+				CA3F12F712AD3D1913D21EF7 /* Configurator */,
+				1445E7E3E6D5F333552EF8ED /* View */,
+				FD05497EEA94AFEDD4D3DC25 /* Interactor */,
+				E78A286E16455444824C731E /* Presenter */,
+				E6D95CAF4F7514D0C0A75C8E /* Builder */,
+			);
+			path = CitySelection;
+			sourceTree = "<group>";
+		};
+		793E20DBA48E2B67A5FEA0AD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0428C064E76EB18C84D1A208 /* WeatherPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		857C7CB6F4D776770BA73132 /* CitySelection */ = {
+			isa = PBXGroup;
+			children = (
+				6C1AFE8D7DF0D05DC1305C97 /* CitySelectionProtocols.swift */,
+				2625B260E5D7E657DFFF78D5 /* View */,
+				9D6C33BCFD732FDA71A60B10 /* CitySelectionPresenter.swift */,
+				E703E1DA4F0925270086BF53 /* CitySelectionInteractor.swift */,
+				96B33A7D9760011DD1D25F46 /* CitySelectionBuilder.swift */,
+				1346BB69CD5FBC43EDDA7A89 /* CitySelectionConfigurator.swift */,
+			);
+			path = CitySelection;
+			sourceTree = "<group>";
+		};
+		880E405AC2ED3045D436F367 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A9791C0265BAD5F262FED41C /* OrderSetup */,
+				73A35275A18C7DA4D0059999 /* CitySelection */,
+				30C024D84D1CADBD8C9BD8E2 /* Weather */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		89220F30FA5187DE5FAB1488 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				290A5A0CB8E5760A5857D577 /* OrderSetupConfiguratorTests.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		9D3E9ACEC71DFA7C24F73543 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A5C83E283CAEA06C798C891 /* Pods_kode_test.framework */,
+				89672EA436626FB1DDB86873 /* Pods_kode_testTests.framework */,
+				9ACAFC705171F08DA623101C /* Pods_kode_testUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A62FE557CAED2D77098D55E3 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				B4392BC62EDDA22D5A0F21A0 /* WeatherBuilderTests.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		A9791C0265BAD5F262FED41C /* OrderSetup */ = {
+			isa = PBXGroup;
+			children = (
+				89220F30FA5187DE5FAB1488 /* Configurator */,
+				1C2A1A9718623ED4AA3F72C5 /* View */,
+				CF5CB660EB2D3FF5547622DE /* Interactor */,
+				AA5DE49A0AD13C52B04E880A /* Presenter */,
+				E39314AE83A13121312D0679 /* Builder */,
+			);
+			path = OrderSetup;
+			sourceTree = "<group>";
+		};
+		AA5DE49A0AD13C52B04E880A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3FB95DAF9D8CE86F9528D056 /* OrderSetupPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BCF78C0D286FD504B6B24DA4 /* OrderSetup */ = {
+			isa = PBXGroup;
+			children = (
+				22BBB8E91A42C8285FE412F2 /* OrderSetupProtocols.swift */,
+				5B123C86C711F9A38B0ABEA6 /* View */,
+				4BD8F7574D6643A4745B9014 /* OrderSetupPresenter.swift */,
+				1A71343665A84861EF93D906 /* OrderSetupInteractor.swift */,
+				1E57653D5018EFF7DCCFABD1 /* OrderSetupBuilder.swift */,
+				EBCBDCA14B82895602046E0B /* OrderSetupConfigurator.swift */,
+			);
+			path = OrderSetup;
+			sourceTree = "<group>";
+		};
+		C9A5A87EDD2A137DB7A7CAB9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A0DA935DFE66800209EF9BE /* Pods-kode_test.debug.xcconfig */,
+				257D7451D5586271D470A3C8 /* Pods-kode_test.release.xcconfig */,
+				43E21B3C343176548F43CB6C /* Pods-kode_testTests.debug.xcconfig */,
+				2774441437FEC39CC4C28358 /* Pods-kode_testTests.release.xcconfig */,
+				FABC205CBB72437DB2029777 /* Pods-kode_testUITests.debug.xcconfig */,
+				172A6B9B311D9FD673625BB4 /* Pods-kode_testUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CA3F12F712AD3D1913D21EF7 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				440591D2E08C3E4CB59CD5D4 /* CitySelectionConfiguratorTests.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		CF2E85711E98011000B53495 = {
+			isa = PBXGroup;
+			children = (
+				CF2E857C1E98011000B53495 /* kode_test */,
+				CF2E85911E98011000B53495 /* kode_testTests */,
+				CF2E859C1E98011000B53495 /* kode_testUITests */,
+				CF2E857B1E98011000B53495 /* Products */,
+				C9A5A87EDD2A137DB7A7CAB9 /* Pods */,
+				9D3E9ACEC71DFA7C24F73543 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF2E857B1E98011000B53495 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF2E857A1E98011000B53495 /* kode_test.app */,
+				CF2E858E1E98011000B53495 /* kode_testTests.xctest */,
+				CF2E85991E98011000B53495 /* kode_testUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF2E857C1E98011000B53495 /* kode_test */ = {
+			isa = PBXGroup;
+			children = (
+				CF2E85B71E9A3E9F00B53495 /* Controls */,
+				CF2E85AE1E98CA6600B53495 /* Managers */,
+				CF2E85AB1E98029D00B53495 /* Extensions */,
+				CF2E857D1E98011000B53495 /* AppDelegate.swift */,
+				CF2E85841E98011000B53495 /* Assets.xcassets */,
+				CF2E85891E98011000B53495 /* Info.plist */,
+				FEEC51991AB07B5958A8BCED /* Scenes */,
+				CF2E85B11E990F7500B53495 /* LaunchScreen.xib */,
+			);
+			path = kode_test;
+			sourceTree = "<group>";
+		};
+		CF2E85911E98011000B53495 /* kode_testTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF2E85921E98011000B53495 /* kode_testTests.swift */,
+				CF2E85941E98011000B53495 /* Info.plist */,
+				880E405AC2ED3045D436F367 /* Modules */,
+			);
+			path = kode_testTests;
+			sourceTree = "<group>";
+		};
+		CF2E859C1E98011000B53495 /* kode_testUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF2E859D1E98011000B53495 /* kode_testUITests.swift */,
+				CF2E859F1E98011000B53495 /* Info.plist */,
+			);
+			path = kode_testUITests;
+			sourceTree = "<group>";
+		};
+		CF2E85AB1E98029D00B53495 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CF2E85AC1E98039500B53495 /* StyleExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		CF2E85AE1E98CA6600B53495 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CF2E85AF1E98CA9300B53495 /* Router.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		CF2E85B71E9A3E9F00B53495 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				CF2E85B81E9A403200B53495 /* PassengerStepper.swift */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		CF5CB660EB2D3FF5547622DE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8ADCBA0DC580880593461FC9 /* OrderSetupInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		DF3FB25AEBC31BA7F34DA641 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FDCC3C33E1695FAB175F0E12 /* WeatherInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E2744496C3E39975BFF4D676 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE393E80B668D9D2AF419941 /* WeatherViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E39314AE83A13121312D0679 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				371FBFBAEAF4517A2B6010BA /* OrderSetupBuilderTests.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		E6D95CAF4F7514D0C0A75C8E /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				9E0B2C0B070CD4FB8CE49B63 /* CitySelectionBuilderTests.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		E78A286E16455444824C731E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				75EACD39F83EAFB162DA0450 /* CitySelectionPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F3699534FC1B89726716CB58 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				903301814DBEAC5AF14EE265 /* WeatherConfiguratorTests.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		FCCADC9CC30A36ABDFC5C10C /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				6D465E88C979A60DC544D0B7 /* WeatherProtocols.swift */,
+				3CFDEFBC63B98F1215FBA2BB /* View */,
+				5CA06528A33EF11E98E7F371 /* WeatherPresenter.swift */,
+				B007064869C0A0BCBA0E2C21 /* WeatherInteractor.swift */,
+				2F8F955763C631326360D45F /* WeatherBuilder.swift */,
+				5E40311EEE9ED539F1220C0F /* WeatherConfigurator.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		FD05497EEA94AFEDD4D3DC25 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				295BFC361BC89CEDF4A42317 /* CitySelectionInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FEEC51991AB07B5958A8BCED /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BCF78C0D286FD504B6B24DA4 /* OrderSetup */,
+				857C7CB6F4D776770BA73132 /* CitySelection */,
+				FCCADC9CC30A36ABDFC5C10C /* Weather */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF2E85791E98011000B53495 /* kode_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2E85A21E98011000B53495 /* Build configuration list for PBXNativeTarget "kode_test" */;
+			buildPhases = (
+				1E8BF95097FA0636E7F6A4A2 /* [CP] Check Pods Manifest.lock */,
+				CF2E85761E98011000B53495 /* Sources */,
+				CF2E85771E98011000B53495 /* Frameworks */,
+				CF2E85781E98011000B53495 /* Resources */,
+				9E5652F18CBD2ADC7B846138 /* [CP] Embed Pods Frameworks */,
+				2133E75B6FB07044D26A9B44 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kode_test;
+			productName = kode_test;
+			productReference = CF2E857A1E98011000B53495 /* kode_test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF2E858D1E98011000B53495 /* kode_testTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2E85A51E98011000B53495 /* Build configuration list for PBXNativeTarget "kode_testTests" */;
+			buildPhases = (
+				39EF695134146C086D63C328 /* [CP] Check Pods Manifest.lock */,
+				CF2E858A1E98011000B53495 /* Sources */,
+				CF2E858B1E98011000B53495 /* Frameworks */,
+				CF2E858C1E98011000B53495 /* Resources */,
+				C850D9D20586AA06073937C8 /* [CP] Embed Pods Frameworks */,
+				EF7127C949F2064DE969A22B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF2E85901E98011000B53495 /* PBXTargetDependency */,
+			);
+			name = kode_testTests;
+			productName = kode_testTests;
+			productReference = CF2E858E1E98011000B53495 /* kode_testTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF2E85981E98011000B53495 /* kode_testUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2E85A81E98011000B53495 /* Build configuration list for PBXNativeTarget "kode_testUITests" */;
+			buildPhases = (
+				509E07E70DCB8982EBBDCA13 /* [CP] Check Pods Manifest.lock */,
+				CF2E85951E98011000B53495 /* Sources */,
+				CF2E85961E98011000B53495 /* Frameworks */,
+				CF2E85971E98011000B53495 /* Resources */,
+				6A48D5094513B3F4FD8B65C7 /* [CP] Embed Pods Frameworks */,
+				C31E77682365738AD8287635 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF2E859B1E98011000B53495 /* PBXTargetDependency */,
+			);
+			name = kode_testUITests;
+			productName = kode_testUITests;
+			productReference = CF2E85991E98011000B53495 /* kode_testUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF2E85721E98011000B53495 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Ivan Gorbulin";
+				TargetAttributes = {
+					CF2E85791E98011000B53495 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+					CF2E858D1E98011000B53495 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CF2E85791E98011000B53495;
+					};
+					CF2E85981E98011000B53495 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CF2E85791E98011000B53495;
+					};
+				};
+			};
+			buildConfigurationList = CF2E85751E98011000B53495 /* Build configuration list for PBXProject "kode_test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF2E85711E98011000B53495;
+			productRefGroup = CF2E857B1E98011000B53495 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF2E85791E98011000B53495 /* kode_test */,
+				CF2E858D1E98011000B53495 /* kode_testTests */,
+				CF2E85981E98011000B53495 /* kode_testUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF2E85781E98011000B53495 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2E85B61E99168300B53495 /* OrderSetupViewController.xib in Resources */,
+				CF2E85B21E990F7500B53495 /* LaunchScreen.xib in Resources */,
+				CF2E85851E98011000B53495 /* Assets.xcassets in Resources */,
+				D82B95E5D884FC15F60ECABA /* CitySelectionViewController.xib in Resources */,
+				305CAA7653C9CC4AEDCAEA1F /* WeatherViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2E858C1E98011000B53495 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2E85971E98011000B53495 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E8BF95097FA0636E7F6A4A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2133E75B6FB07044D26A9B44 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kode_test/Pods-kode_test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39EF695134146C086D63C328 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		509E07E70DCB8982EBBDCA13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6A48D5094513B3F4FD8B65C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kode_testUITests/Pods-kode_testUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E5652F18CBD2ADC7B846138 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kode_test/Pods-kode_test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C31E77682365738AD8287635 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kode_testUITests/Pods-kode_testUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C850D9D20586AA06073937C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kode_testTests/Pods-kode_testTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF7127C949F2064DE969A22B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kode_testTests/Pods-kode_testTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF2E85761E98011000B53495 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2E85B01E98CA9300B53495 /* Router.swift in Sources */,
+				CF2E857E1E98011000B53495 /* AppDelegate.swift in Sources */,
+				CF2E85AD1E98039500B53495 /* StyleExtensions.swift in Sources */,
+				C795AD63564499FD8E9DD275 /* OrderSetupProtocols.swift in Sources */,
+				F9DD73B603C3DFDEEE661D6D /* OrderSetupPresenter.swift in Sources */,
+				20A8E9C1989D3C7F46EA6DBB /* OrderSetupInteractor.swift in Sources */,
+				CF2E85B51E99168300B53495 /* OrderSetupViewController.swift in Sources */,
+				4CC0366FB6B89492B325E78D /* OrderSetupBuilder.swift in Sources */,
+				21DF34209451525580D0C44F /* OrderSetupConfigurator.swift in Sources */,
+				D1F5CACB61403530CCCEA3BD /* CitySelectionProtocols.swift in Sources */,
+				9CB19D6F663EAB6E1A96A64C /* CitySelectionViewController.swift in Sources */,
+				D48EB0BB7AC950FBDC97179A /* CitySelectionPresenter.swift in Sources */,
+				67D17A70DCABA81DAFBFCECC /* CitySelectionInteractor.swift in Sources */,
+				EBD953639CC50C3E33D58254 /* CitySelectionBuilder.swift in Sources */,
+				89651A05EE37DB29D2D50221 /* CitySelectionConfigurator.swift in Sources */,
+				E5E3D76F67622F249E4F82D7 /* WeatherProtocols.swift in Sources */,
+				F8F94B78B6B9929BA9BD63B3 /* WeatherViewController.swift in Sources */,
+				708C769F6D100F57B3B0678A /* WeatherPresenter.swift in Sources */,
+				CF2E85B91E9A403200B53495 /* PassengerStepper.swift in Sources */,
+				9856EB00D91FB35DAFC36BE2 /* WeatherInteractor.swift in Sources */,
+				4DFCCFE008CB2C507C190940 /* WeatherBuilder.swift in Sources */,
+				D733C381B0299CA28258744D /* WeatherConfigurator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2E858A1E98011000B53495 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2E85931E98011000B53495 /* kode_testTests.swift in Sources */,
+				D5032311AB12C6660469245B /* OrderSetupConfiguratorTests.swift in Sources */,
+				45AB70043769EC13518F07B2 /* OrderSetupViewTests.swift in Sources */,
+				5A83C1D2BA9696819CD198E3 /* OrderSetupInteractorTests.swift in Sources */,
+				9D2874782AE3F3BE5AD4D0B6 /* OrderSetupPresenterTests.swift in Sources */,
+				E720FC6CB433296DB169EAFC /* OrderSetupBuilderTests.swift in Sources */,
+				0F7BB23BDC66F66BE6CD99F4 /* CitySelectionConfiguratorTests.swift in Sources */,
+				A3C4ABAED04E35D30F2D3D12 /* CitySelectionViewTests.swift in Sources */,
+				CC8A30F5BDEAEEE500ECAB40 /* CitySelectionInteractorTests.swift in Sources */,
+				CC87B660A26D1DCDC4C51A26 /* CitySelectionPresenterTests.swift in Sources */,
+				867BCF2A2D230E8D986864E5 /* CitySelectionBuilderTests.swift in Sources */,
+				DC7100E52D84D63BD9B5DEDF /* WeatherConfiguratorTests.swift in Sources */,
+				DA788F41798D71D82D9F76CE /* WeatherViewTests.swift in Sources */,
+				2579407ADB762603E3F63391 /* WeatherInteractorTests.swift in Sources */,
+				8DC8AD39167FAF06FAFFD12E /* WeatherPresenterTests.swift in Sources */,
+				DDD9FB5CC818E89090970AF1 /* WeatherBuilderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2E85951E98011000B53495 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2E859E1E98011000B53495 /* kode_testUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF2E85901E98011000B53495 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF2E85791E98011000B53495 /* kode_test */;
+			targetProxy = CF2E858F1E98011000B53495 /* PBXContainerItemProxy */;
+		};
+		CF2E859B1E98011000B53495 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF2E85791E98011000B53495 /* kode_test */;
+			targetProxy = CF2E859A1E98011000B53495 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CF2E85A01E98011000B53495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF2E85A11E98011000B53495 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF2E85A31E98011000B53495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A0DA935DFE66800209EF9BE /* Pods-kode_test.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = kode_test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "IG.kode-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CF2E85A41E98011000B53495 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 257D7451D5586271D470A3C8 /* Pods-kode_test.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = kode_test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "IG.kode-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CF2E85A61E98011000B53495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43E21B3C343176548F43CB6C /* Pods-kode_testTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = kode_testTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "IG.kode-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kode_test.app/kode_test";
+			};
+			name = Debug;
+		};
+		CF2E85A71E98011000B53495 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2774441437FEC39CC4C28358 /* Pods-kode_testTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = kode_testTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "IG.kode-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kode_test.app/kode_test";
+			};
+			name = Release;
+		};
+		CF2E85A91E98011000B53495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FABC205CBB72437DB2029777 /* Pods-kode_testUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = kode_testUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "IG.kode-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = kode_test;
+			};
+			name = Debug;
+		};
+		CF2E85AA1E98011000B53495 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 172A6B9B311D9FD673625BB4 /* Pods-kode_testUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = kode_testUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "IG.kode-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = kode_test;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF2E85751E98011000B53495 /* Build configuration list for PBXProject "kode_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2E85A01E98011000B53495 /* Debug */,
+				CF2E85A11E98011000B53495 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF2E85A21E98011000B53495 /* Build configuration list for PBXNativeTarget "kode_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2E85A31E98011000B53495 /* Debug */,
+				CF2E85A41E98011000B53495 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF2E85A51E98011000B53495 /* Build configuration list for PBXNativeTarget "kode_testTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2E85A61E98011000B53495 /* Debug */,
+				CF2E85A71E98011000B53495 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF2E85A81E98011000B53495 /* Build configuration list for PBXNativeTarget "kode_testUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2E85A91E98011000B53495 /* Debug */,
+				CF2E85AA1E98011000B53495 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF2E85721E98011000B53495 /* Project object */;
+}
