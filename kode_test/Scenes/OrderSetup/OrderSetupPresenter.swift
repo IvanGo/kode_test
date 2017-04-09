@@ -17,4 +17,16 @@ class OrderSetupPresenter: OrderSetupModuleInput, OrderSetupViewOutput, OrderSet
     func viewIsReady() {
 
     }
+    
+    func handleTap(toCity: City?) {
+        Router.shared.showCitiesList { (city) in
+            
+        }
+    }
+    
+    func handleTap(fromCity: City?) {
+        Router.shared.showCitiesList { (city) in
+            
+        }
+    }
 }

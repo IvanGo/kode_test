@@ -9,5 +9,9 @@
 class CitySelectionInteractor: CitySelectionInteractorInput {
 
     weak var output: CitySelectionInteractorOutput!
+    
+    func fetchCities() {
+        NetworkManager.requestCities()
+    }
 
 }

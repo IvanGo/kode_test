@@ -25,4 +25,11 @@ class Router {
         root.pushViewController(mainController, animated: false)
     }
     
+    func showCitiesList(selectionClouse: @escaping CitySelectionDidSelect) {
+        let citiesList = CitySelectionBuilder.buildControllerForDefault(selectionClouse: selectionClouse)
+        citiesList.modalPresentationStyle = .overCurrentContext
+        citiesList.modalTransitionStyle = .crossDissolve
+        root.present(citiesList, animated: true, completion: nil)
+    }
+    
 }

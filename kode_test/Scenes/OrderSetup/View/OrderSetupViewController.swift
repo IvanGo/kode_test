@@ -34,12 +34,29 @@ class OrderSetupViewController: UIViewController, OrderSetupViewInput {
         kidsStepper.delegate = self
         babyStepper.delegate = self
         
+        let fromTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapedOnFromCityLabel(_:)))
+        fromLabel.addGestureRecognizer(fromTapRecognizer)
+        fromLabel.isUserInteractionEnabled = true
+        
+        let toTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapedOnToCityLabel(_:)))
+        toLabel.addGestureRecognizer(toTapRecognizer)
+        toLabel.isUserInteractionEnabled = true
+        
         output.viewIsReady()
     }
     
     
     // MARK: OrderSetupViewInput
     func setupInitialState() {
+    }
+    
+    //MARK: - TapGestureRecognizers
+    func tapedOnFromCityLabel(_ sender: UITapGestureRecognizer) {
+        output.handleTap(fromCity: nil)
+    }
+    
+    func tapedOnToCityLabel(_ sender: UITapGestureRecognizer) {
+        output.handleTap(toCity: nil)
     }
 }
 

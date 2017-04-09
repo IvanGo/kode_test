@@ -24,4 +24,8 @@ class CitySelectionViewController: UIViewController, CitySelectionViewInput {
     // MARK: CitySelectionViewInput
     func setupInitialState() {
     }
+    
+    @IBAction func closeButtonPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }

@@ -26,6 +26,9 @@ protocol OrderSetupViewOutput {
         @author Ivan Gorbulin
         Notify presenter that view is ready
     */
+    
+    func handleTap(fromCity: City?)
+    func handleTap(toCity: City?)
 
     func viewIsReady()
 }

@@ -8,6 +8,8 @@
 
 class CitySelectionPresenter: CitySelectionModuleInput, CitySelectionViewOutput, CitySelectionInteractorOutput {
 
+    var selectionClouse: CitySelectionDidSelect?
+    
     weak var view: CitySelectionViewInput!
     var interactor: CitySelectionInteractorInput!
 
@@ -15,6 +17,6 @@ class CitySelectionPresenter: CitySelectionModuleInput, CitySelectionViewOutput,
     weak var globalRouter: Router?
 
     func viewIsReady() {
-
+        interactor.fetchCities()
     }
 }

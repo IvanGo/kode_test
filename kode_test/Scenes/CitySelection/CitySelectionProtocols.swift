@@ -10,6 +10,8 @@
  View layer 
  */
 
+typealias CitySelectionDidSelect = (City) -> Void
+
 protocol CitySelectionViewInput: class {
 
     /**
@@ -44,6 +46,7 @@ protocol CitySelectionModuleInput: class {
  */
 
 protocol CitySelectionInteractorInput {
+    func fetchCities()
 }
 
 protocol CitySelectionInteractorOutput: class {

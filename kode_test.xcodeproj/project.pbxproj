@@ -41,6 +41,9 @@
 		CF2E85B51E99168300B53495 /* OrderSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E85B31E99168300B53495 /* OrderSetupViewController.swift */; };
 		CF2E85B61E99168300B53495 /* OrderSetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2E85B41E99168300B53495 /* OrderSetupViewController.xib */; };
 		CF2E85B91E9A403200B53495 /* PassengerStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E85B81E9A403200B53495 /* PassengerStepper.swift */; };
+		CF2E85BB1E9A99EB00B53495 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E85BA1E9A99EB00B53495 /* NetworkManager.swift */; };
+		CF2E85BE1E9A9FF400B53495 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E85BD1E9A9FF400B53495 /* Models.swift */; };
+		CF2E85C01E9AA07A00B53495 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E85BF1E9AA07A00B53495 /* Parser.swift */; };
 		D1F5CACB61403530CCCEA3BD /* CitySelectionProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1AFE8D7DF0D05DC1305C97 /* CitySelectionProtocols.swift */; };
 		D48EB0BB7AC950FBDC97179A /* CitySelectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6C33BCFD732FDA71A60B10 /* CitySelectionPresenter.swift */; };
 		D5032311AB12C6660469245B /* OrderSetupConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290A5A0CB8E5760A5857D577 /* OrderSetupConfiguratorTests.swift */; };
@@ -129,6 +132,9 @@
 		CF2E85B31E99168300B53495 /* OrderSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderSetupViewController.swift; sourceTree = "<group>"; };
 		CF2E85B41E99168300B53495 /* OrderSetupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderSetupViewController.xib; sourceTree = "<group>"; };
 		CF2E85B81E9A403200B53495 /* PassengerStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PassengerStepper.swift; path = Controls/PassengerStepper.swift; sourceTree = "<group>"; };
+		CF2E85BA1E9A99EB00B53495 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = Managers/NetworkManager.swift; sourceTree = "<group>"; };
+		CF2E85BD1E9A9FF400B53495 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Models.swift; path = Models/Models.swift; sourceTree = "<group>"; };
+		CF2E85BF1E9AA07A00B53495 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Managers/Parser.swift; sourceTree = "<group>"; };
 		E703E1DA4F0925270086BF53 /* CitySelectionInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CitySelectionInteractor.swift; sourceTree = "<group>"; };
 		EBCBDCA14B82895602046E0B /* OrderSetupConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OrderSetupConfigurator.swift; sourceTree = "<group>"; };
 		FABC205CBB72437DB2029777 /* Pods-kode_testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kode_testUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kode_testUITests/Pods-kode_testUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -366,6 +372,7 @@
 		CF2E857C1E98011000B53495 /* kode_test */ = {
 			isa = PBXGroup;
 			children = (
+				CF2E85BC1E9A9FD900B53495 /* Models */,
 				CF2E85B71E9A3E9F00B53495 /* Controls */,
 				CF2E85AE1E98CA6600B53495 /* Managers */,
 				CF2E85AB1E98029D00B53495 /* Extensions */,
@@ -409,6 +416,8 @@
 			isa = PBXGroup;
 			children = (
 				CF2E85AF1E98CA9300B53495 /* Router.swift */,
+				CF2E85BA1E9A99EB00B53495 /* NetworkManager.swift */,
+				CF2E85BF1E9AA07A00B53495 /* Parser.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -419,6 +428,14 @@
 				CF2E85B81E9A403200B53495 /* PassengerStepper.swift */,
 			);
 			name = Controls;
+			sourceTree = "<group>";
+		};
+		CF2E85BC1E9A9FD900B53495 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF2E85BD1E9A9FF400B53495 /* Models.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		CF5CB660EB2D3FF5547622DE /* Interactor */ = {
@@ -791,6 +808,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2E85BB1E9A99EB00B53495 /* NetworkManager.swift in Sources */,
 				CF2E85B01E98CA9300B53495 /* Router.swift in Sources */,
 				CF2E857E1E98011000B53495 /* AppDelegate.swift in Sources */,
 				CF2E85AD1E98039500B53495 /* StyleExtensions.swift in Sources */,
@@ -803,9 +821,11 @@
 				D1F5CACB61403530CCCEA3BD /* CitySelectionProtocols.swift in Sources */,
 				9CB19D6F663EAB6E1A96A64C /* CitySelectionViewController.swift in Sources */,
 				D48EB0BB7AC950FBDC97179A /* CitySelectionPresenter.swift in Sources */,
+				CF2E85BE1E9A9FF400B53495 /* Models.swift in Sources */,
 				67D17A70DCABA81DAFBFCECC /* CitySelectionInteractor.swift in Sources */,
 				EBD953639CC50C3E33D58254 /* CitySelectionBuilder.swift in Sources */,
 				89651A05EE37DB29D2D50221 /* CitySelectionConfigurator.swift in Sources */,
+				CF2E85C01E9AA07A00B53495 /* Parser.swift in Sources */,
 				E5E3D76F67622F249E4F82D7 /* WeatherProtocols.swift in Sources */,
 				F8F94B78B6B9929BA9BD63B3 /* WeatherViewController.swift in Sources */,
 				708C769F6D100F57B3B0678A /* WeatherPresenter.swift in Sources */,
