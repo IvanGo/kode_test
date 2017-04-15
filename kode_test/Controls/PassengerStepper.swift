@@ -33,6 +33,15 @@ class PassengerStepper: UIView {
         didSet {
             delegate?.passengerStepper(self, didChange: value)
             countLabel.text = "\(value)"
+
+            UIView.animate(withDuration: 0.1,
+                           delay: 0,
+                           options: .autoreverse,
+                           animations: { 
+                            self.countLabel.transform = CGAffineTransform(scaleX: 1.4, y: 1.4)
+            }) { (_) in
+                self.countLabel.transform = CGAffineTransform.identity
+            }
         }
     }
     

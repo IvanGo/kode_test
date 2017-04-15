@@ -54,7 +54,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate {
     func setupAppearence() {
-        
+        UINavigationBar.appearance().barTintColor = UIColor.kdMainBackground
+        UINavigationBar.appearance().shadowImage  = UIImage()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
     }
 }
 

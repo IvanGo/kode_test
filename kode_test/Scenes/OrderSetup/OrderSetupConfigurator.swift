@@ -22,6 +22,7 @@ class OrderSetupModuleConfigurator {
 
         let presenter = OrderSetupPresenter()
         presenter.view = viewController
+        presenter.globalRouter = Router.shared
 
         let interactor = OrderSetupInteractor()
         interactor.output = presenter

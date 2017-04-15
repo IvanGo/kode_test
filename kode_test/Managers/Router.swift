@@ -17,7 +17,6 @@ class Router {
     init() {
         root = UINavigationController()
         root.navigationBar.isTranslucent = false
-        root.navigationBar.barTintColor = UIColor.kdMainBackground
     }
     
     func start() {

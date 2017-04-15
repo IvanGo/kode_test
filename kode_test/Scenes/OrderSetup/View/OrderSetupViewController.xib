@@ -14,9 +14,12 @@
                 <outlet property="adultsStepper" destination="Ttm-50-LyO" id="JA8-Ae-UFj"/>
                 <outlet property="babyStepper" destination="Ktj-7f-OOf" id="mCC-A7-frv"/>
                 <outlet property="fromDescriptionLabel" destination="RgT-Ir-YXT" id="m5c-bU-5sr"/>
+                <outlet property="fromIconImageView" destination="5Lq-ie-E3l" id="svb-0R-JXU"/>
                 <outlet property="fromLabel" destination="JV9-1j-7wL" id="XlH-P9-BAk"/>
                 <outlet property="kidsStepper" destination="Pxg-3d-53U" id="WEu-gx-MFB"/>
+                <outlet property="lineImageView" destination="dWA-Pu-a6Y" id="k1Z-wH-H9g"/>
                 <outlet property="toDescriptionLabel" destination="KpA-uw-BCn" id="97Z-Dp-XRb"/>
+                <outlet property="toIconImageView" destination="r0Y-gY-tR3" id="lIJ-HI-amg"/>
                 <outlet property="toLabel" destination="pGk-77-eYZ" id="epw-Sf-lqm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -30,50 +33,53 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="urK-pz-Sb6">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="490"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="443"/>
                             <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFl-Kz-my3">
-                                    <rect key="frame" x="32" y="103" width="287" height="1"/>
+                                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFl-Kz-my3">
+                                    <rect key="frame" x="32" y="73" width="287" height="1"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="Ax1-FX-Pd5"/>
                                     </constraints>
                                 </view>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JV9-1j-7wL">
-                                    <rect key="frame" x="32" y="16" width="327" height="21"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Откуда" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JV9-1j-7wL">
+                                    <rect key="frame" x="32" y="16" width="327" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgT-Ir-YXT">
-                                    <rect key="frame" x="32" y="45" width="327" height="34"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Все аэропорты" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgT-Ir-YXT">
+                                    <rect key="frame" x="32" y="35.5" width="327" height="13.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGk-77-eYZ">
-                                    <rect key="frame" x="32" y="128" width="327" height="21"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="Куда" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGk-77-eYZ">
+                                    <rect key="frame" x="32" y="98" width="327" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpA-uw-BCn">
-                                    <rect key="frame" x="32" y="157" width="327" height="21"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Все аэропорты" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpA-uw-BCn">
+                                    <rect key="frame" x="32" y="117.5" width="327" height="13.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOW-tE-DUq">
-                                    <rect key="frame" x="319" y="83.5" width="40" height="40"/>
+                                    <rect key="frame" x="319" y="53.5" width="40" height="40"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="40" id="sVW-y2-LZs"/>
                                         <constraint firstAttribute="width" constant="40" id="tY8-N9-a63"/>
                                     </constraints>
                                     <inset key="imageEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     <state key="normal" image="changeCities"/>
+                                    <connections>
+                                        <action selector="swapCitiesButtonPressed:" destination="-1" eventType="touchUpInside" id="pTO-oP-2zf"/>
+                                    </connections>
                                 </button>
                                 <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptyDot" translatesAutoresizingMaskIntoConstraints="NO" id="5Lq-ie-E3l">
-                                    <rect key="frame" x="8" y="18.5" width="16" height="16"/>
+                                    <rect key="frame" x="8" y="18" width="16" height="16"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="16" id="l6h-B0-GNx"/>
@@ -81,36 +87,36 @@
                                     </constraints>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fillDot" translatesAutoresizingMaskIntoConstraints="NO" id="r0Y-gY-tR3">
-                                    <rect key="frame" x="8" y="130.5" width="16" height="16"/>
+                                    <rect key="frame" x="8" y="100" width="16" height="16"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="16" id="Ug7-xJ-QZb"/>
                                         <constraint firstAttribute="height" constant="16" id="XSG-ha-kCK"/>
                                     </constraints>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dotedLine" translatesAutoresizingMaskIntoConstraints="NO" id="dWA-Pu-a6Y">
-                                    <rect key="frame" x="8" y="34.5" width="16" height="96"/>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dotedLine" translatesAutoresizingMaskIntoConstraints="NO" id="dWA-Pu-a6Y">
+                                    <rect key="frame" x="8" y="34" width="16" height="66"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="16" id="4QY-pp-du5"/>
                                     </constraints>
                                 </imageView>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u5O-i5-ptX">
-                                    <rect key="frame" x="0.0" y="202" width="375" height="1"/>
+                                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u5O-i5-ptX">
+                                    <rect key="frame" x="0.0" y="155" width="375" height="1"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="coT-oZ-vl3"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fRS-1r-5Cx">
-                                    <rect key="frame" x="0.0" y="325" width="375" height="1"/>
+                                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fRS-1r-5Cx">
+                                    <rect key="frame" x="0.0" y="278" width="375" height="1"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="ZHA-g9-zXU"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AmZ-Ix-rhw">
-                                    <rect key="frame" x="32" y="219" width="130" height="90"/>
+                                    <rect key="frame" x="32" y="172" width="130" height="90"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="90" id="FRR-xG-nMC"/>
@@ -118,7 +124,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O4h-aw-tKP">
-                                    <rect key="frame" x="178" y="219" width="130" height="90"/>
+                                    <rect key="frame" x="178" y="172" width="130" height="90"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="130" id="aez-yy-BUt"/>
@@ -126,7 +132,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ttm-50-LyO" customClass="PassengerStepper" customModule="kode_test" customModuleProvider="target">
-                                    <rect key="frame" x="32" y="350" width="80" height="116"/>
+                                    <rect key="frame" x="32" y="303" width="80" height="116"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="116" id="lhB-9p-x51"/>
@@ -138,7 +144,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pxg-3d-53U" customClass="PassengerStepper" customModule="kode_test" customModuleProvider="target">
-                                    <rect key="frame" x="128" y="350" width="80" height="116"/>
+                                    <rect key="frame" x="128" y="303" width="80" height="116"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="80" id="cz0-hk-oGf"/>
@@ -150,7 +156,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ktj-7f-OOf" customClass="PassengerStepper" customModule="kode_test" customModuleProvider="target">
-                                    <rect key="frame" x="224" y="350" width="80" height="116"/>
+                                    <rect key="frame" x="224" y="303" width="80" height="116"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="80" id="fvC-KT-2o8"/>
@@ -167,12 +173,12 @@
                                 <constraint firstAttribute="trailing" secondItem="fRS-1r-5Cx" secondAttribute="trailing" id="019-lv-xek"/>
                                 <constraint firstItem="KpA-uw-BCn" firstAttribute="width" secondItem="pGk-77-eYZ" secondAttribute="width" id="0da-Rr-jB8"/>
                                 <constraint firstItem="Ktj-7f-OOf" firstAttribute="top" secondItem="fRS-1r-5Cx" secondAttribute="bottom" constant="24" id="1qn-YK-Spt"/>
-                                <constraint firstItem="KpA-uw-BCn" firstAttribute="top" secondItem="pGk-77-eYZ" secondAttribute="bottom" constant="8" id="32p-0F-s2u"/>
+                                <constraint firstItem="KpA-uw-BCn" firstAttribute="top" secondItem="pGk-77-eYZ" secondAttribute="bottom" id="32p-0F-s2u"/>
                                 <constraint firstItem="u5O-i5-ptX" firstAttribute="top" secondItem="KpA-uw-BCn" secondAttribute="bottom" constant="24" id="3Qv-rW-s2i"/>
                                 <constraint firstItem="fRS-1r-5Cx" firstAttribute="leading" secondItem="urK-pz-Sb6" secondAttribute="leading" id="420-Wc-4gT"/>
                                 <constraint firstItem="AmZ-Ix-rhw" firstAttribute="top" secondItem="u5O-i5-ptX" secondAttribute="bottom" constant="16" id="4rQ-LX-FMA"/>
                                 <constraint firstItem="fRS-1r-5Cx" firstAttribute="top" secondItem="AmZ-Ix-rhw" secondAttribute="bottom" constant="16" id="82p-vX-XH9"/>
-                                <constraint firstItem="RgT-Ir-YXT" firstAttribute="top" secondItem="JV9-1j-7wL" secondAttribute="bottom" constant="8" id="AAA-xx-5pH"/>
+                                <constraint firstItem="RgT-Ir-YXT" firstAttribute="top" secondItem="JV9-1j-7wL" secondAttribute="bottom" id="AAA-xx-5pH"/>
                                 <constraint firstItem="JV9-1j-7wL" firstAttribute="top" secondItem="urK-pz-Sb6" secondAttribute="top" constant="16" id="HG5-kO-oum"/>
                                 <constraint firstItem="pGk-77-eYZ" firstAttribute="leading" secondItem="r0Y-gY-tR3" secondAttribute="trailing" constant="8" id="I9c-uf-9Gn"/>
                                 <constraint firstItem="O4h-aw-tKP" firstAttribute="top" secondItem="u5O-i5-ptX" secondAttribute="bottom" constant="16" id="J4N-L9-GUA"/>

@@ -20,6 +20,8 @@ protocol CitySelectionViewInput: class {
     */
 
     func setupInitialState()
+    
+    func display(cities: [City])
 }
 
 protocol CitySelectionViewOutput {
@@ -30,6 +32,9 @@ protocol CitySelectionViewOutput {
     */
 
     func viewIsReady()
+    
+    func handle(textChanged: String)
+    func handle(citySelected: City)
 }
 
 
@@ -50,5 +55,6 @@ protocol CitySelectionInteractorInput {
 }
 
 protocol CitySelectionInteractorOutput: class {
-
+    func present(cities: [City])
+    func present(error: Error)
 }

@@ -19,6 +19,20 @@ class OrderSetupViewController: UIViewController, OrderSetupViewInput {
     @IBOutlet weak var kidsStepper: PassengerStepper!
     @IBOutlet weak var babyStepper: PassengerStepper!
     
+    @IBOutlet weak var fromIconImageView: UIImageView!
+    @IBOutlet weak var toIconImageView: UIImageView!
+    @IBOutlet weak var lineImageView: UIImageView!
+    
+    var fromCity: City? = nil {
+        didSet {
+            fromLabel.text = fromCity?.name ?? "Откуда"
+        }
+    }
+    var toCity: City? = nil {
+        didSet {
+            toLabel.text = toCity?.name ?? "Куда"
+        }
+    }
     
     var output: OrderSetupViewOutput!
     
@@ -27,7 +41,12 @@ class OrderSetupViewController: UIViewController, OrderSetupViewInput {
         super.viewDidLoad()
         assert(self.output != nil, "you must create new scene instance with it's router methods")
         
+        navigationItem.title = "UTair"
+        
         view.backgroundColor = UIColor.kdMainBackground
+        
+        fromIconImageView.tintColor = .white
+        fromIconImageView.image = UIImage(named: "emptyDot")?.withRenderingMode(.alwaysTemplate)
         
         adultsStepper.value = 1
         adultsStepper.delegate = self
@@ -58,6 +77,14 @@ class OrderSetupViewController: UIViewController, OrderSetupViewInput {
     func tapedOnToCityLabel(_ sender: UITapGestureRecognizer) {
         output.handleTap(toCity: nil)
     }
+    
+    @IBAction func swapCitiesButtonPressed(_ sender: Any) {
+        let temp = fromCity
+        fromCity = toCity
+        toCity = temp
+    }
+    
+    
 }
 
 extension OrderSetupViewController: PassengerStepperDelegate {

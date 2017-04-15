@@ -11,6 +11,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CitySelectionViewController" customModule="kode_test" customModuleProvider="target">
             <connections>
+                <outlet property="citiesTableView" destination="2oY-qm-eG6" id="upT-lC-15O"/>
+                <outlet property="cityTextField" destination="GWc-pD-XB1" id="GbP-5W-iPl"/>
+                <outlet property="containerView" destination="u64-SZ-s7z" id="59k-Zh-nuO"/>
+                <outlet property="dotImageView" destination="w6j-r7-8Kr" id="35O-64-Trz"/>
+                <outlet property="subtitleLabel" destination="fq9-JB-qiI" id="6G3-ld-bYa"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,13 +26,52 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u64-SZ-s7z">
                     <rect key="frame" x="0.0" y="65" width="375" height="602"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptyDot" translatesAutoresizingMaskIntoConstraints="NO" id="w6j-r7-8Kr">
+                            <rect key="frame" x="8" y="19.5" width="16" height="9"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="CbW-ir-GmM"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Город" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GWc-pD-XB1">
+                            <rect key="frame" x="32" y="14" width="327" height="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                        </textField>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2oY-qm-eG6">
+                            <rect key="frame" x="0.0" y="55.5" width="375" height="546.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </tableView>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Все аэропорты" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fq9-JB-qiI">
+                            <rect key="frame" x="32" y="34" width="327" height="13.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="GWc-pD-XB1" firstAttribute="leading" secondItem="w6j-r7-8Kr" secondAttribute="trailing" constant="8" id="8im-ff-8FB"/>
+                        <constraint firstAttribute="trailing" secondItem="2oY-qm-eG6" secondAttribute="trailing" id="C2I-nR-bui"/>
+                        <constraint firstItem="GWc-pD-XB1" firstAttribute="top" secondItem="u64-SZ-s7z" secondAttribute="top" constant="14" id="Cmx-dz-m3G"/>
+                        <constraint firstItem="2oY-qm-eG6" firstAttribute="top" secondItem="fq9-JB-qiI" secondAttribute="bottom" constant="8" id="DP7-0Q-g5U"/>
+                        <constraint firstItem="2oY-qm-eG6" firstAttribute="leading" secondItem="u64-SZ-s7z" secondAttribute="leading" id="HbM-b0-sOB"/>
+                        <constraint firstAttribute="bottom" secondItem="2oY-qm-eG6" secondAttribute="bottom" id="QJ8-o2-kDd"/>
+                        <constraint firstAttribute="trailing" secondItem="GWc-pD-XB1" secondAttribute="trailing" constant="16" id="VR3-yv-6XQ"/>
+                        <constraint firstItem="fq9-JB-qiI" firstAttribute="leading" secondItem="GWc-pD-XB1" secondAttribute="leading" id="bM3-gN-yEI"/>
+                        <constraint firstItem="fq9-JB-qiI" firstAttribute="top" secondItem="GWc-pD-XB1" secondAttribute="bottom" id="gG0-e4-Ebu"/>
+                        <constraint firstItem="fq9-JB-qiI" firstAttribute="width" secondItem="GWc-pD-XB1" secondAttribute="width" id="iFW-nQ-2oC"/>
+                        <constraint firstItem="w6j-r7-8Kr" firstAttribute="leading" secondItem="u64-SZ-s7z" secondAttribute="leading" constant="8" id="iH4-nv-nn8"/>
+                        <constraint firstItem="w6j-r7-8Kr" firstAttribute="centerY" secondItem="GWc-pD-XB1" secondAttribute="centerY" id="mBr-0e-Pq5"/>
+                    </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDp-U0-s9E">
-                    <rect key="frame" x="310" y="0.0" width="65" height="65"/>
+                    <rect key="frame" x="330" y="20" width="45" height="45"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="65" id="8Ly-aU-Lq9"/>
-                        <constraint firstAttribute="width" constant="65" id="oe3-HV-qPW"/>
+                        <constraint firstAttribute="height" constant="45" id="8Ly-aU-Lq9"/>
+                        <constraint firstAttribute="width" constant="45" id="oe3-HV-qPW"/>
                     </constraints>
                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="X"/>
@@ -40,7 +84,7 @@
             <constraints>
                 <constraint firstItem="u64-SZ-s7z" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0x5-Zg-ubq"/>
                 <constraint firstAttribute="trailing" secondItem="u64-SZ-s7z" secondAttribute="trailing" id="7UI-aj-jvY"/>
-                <constraint firstItem="NDp-U0-s9E" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8Ky-eg-uem"/>
+                <constraint firstItem="NDp-U0-s9E" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="8Ky-eg-uem"/>
                 <constraint firstAttribute="bottom" secondItem="u64-SZ-s7z" secondAttribute="bottom" id="G9O-sq-gFE"/>
                 <constraint firstItem="u64-SZ-s7z" firstAttribute="top" secondItem="NDp-U0-s9E" secondAttribute="bottom" id="OXB-CZ-WbR"/>
                 <constraint firstAttribute="trailing" secondItem="NDp-U0-s9E" secondAttribute="trailing" id="pg7-X5-3kK"/>
@@ -48,4 +92,7 @@
             <point key="canvasLocation" x="33.5" y="54.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="emptyDot" width="9" height="9"/>
+    </resources>
 </document>

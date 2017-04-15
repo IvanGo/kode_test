@@ -10,20 +10,24 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
+typealias NetworkManagerSuccessCities = ([City]) -> Void
+typealias NetworkManagerFail = (Error) -> Void
+
 class NetworkManager {
     
     private static let cityURL = "http://api.meetup.com/2/cities"
 
-    class func requestCities() {
+    class func requestCities(succsed: @escaping NetworkManagerSuccessCities, fail: @escaping NetworkManagerFail) {
         Alamofire.request(URL(string: cityURL)!, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil).validate().responseJSON { (response) in
             switch(response.result) {
             case .success(let value):
                 let json = JSON(value)
                 let cities = Parser.parse(citiesJson: json)
-                print("\(cities)")
+                succsed(cities)
                 break
             case .failure(let error):
                 print("\(error)")
+                fail(error)
                 break
             }
             

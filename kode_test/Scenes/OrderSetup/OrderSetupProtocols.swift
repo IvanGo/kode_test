@@ -16,6 +16,10 @@ protocol OrderSetupViewInput: class {
         @author Ivan Gorbulin
         Setup initial state of the view
     */
+    
+    
+    var fromCity: City? { get set }
+    var toCity: City? { get set }
 
     func setupInitialState()
 }
