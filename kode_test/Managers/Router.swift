@@ -33,6 +33,7 @@ class Router {
     
     func showWeather(from: City, to: City) {
         let weatherList = WeatherBuilder.buildController(fromCity: from, toCity: to)
+        root.visibleViewController?.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         root.pushViewController(weatherList, animated: true)
     }
     
