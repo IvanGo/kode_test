@@ -68,7 +68,9 @@ class PassengerStepper: UIView {
     }
     
     private func initAndSetupViews() {
-        translatesAutoresizingMaskIntoConstraints = false
+        #if !TARGET_INTERFACE_BUILDER
+            translatesAutoresizingMaskIntoConstraints = false
+        #endif
         
         plusButton  = initAndPlace(ofType: UIButton.self)
         minusButton = initAndPlace(ofType: UIButton.self)
@@ -123,7 +125,9 @@ class PassengerStepper: UIView {
 
     private func initAndPlace<T>( ofType: T.Type) -> T where T: UIView {
         let result = T(frame: .zero)
-        result.translatesAutoresizingMaskIntoConstraints = false
+        #if !TARGET_INTERFACE_BUILDER
+            result.translatesAutoresizingMaskIntoConstraints = false
+        #endif
         addSubview(result)
         
         return result

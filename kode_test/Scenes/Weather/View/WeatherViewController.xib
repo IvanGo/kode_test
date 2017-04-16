@@ -1,20 +1,61 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeatherViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeatherViewController" customModule="kode_test" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="weatherTable" destination="p0c-DP-H0O" id="STB-yu-Rmw"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Шаг 7 из 7. Проверьте данные" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypb-KY-8PD">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="0.19121368838028169" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="5Tw-eX-wU7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p0c-DP-H0O">
+                    <rect key="frame" x="0.0" y="73" width="375" height="594"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="GGH-Ye-B6R">
+                    <rect key="frame" x="0.0" y="45" width="375" height="29"/>
+                    <segments>
+                        <segment title="Туда"/>
+                        <segment title="Обратно"/>
+                    </segments>
+                </segmentedControl>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="p0c-DP-H0O" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BS7-jv-Rhr"/>
+                <constraint firstItem="p0c-DP-H0O" firstAttribute="top" secondItem="GGH-Ye-B6R" secondAttribute="bottom" id="DJO-R3-DvW"/>
+                <constraint firstAttribute="bottom" secondItem="p0c-DP-H0O" secondAttribute="bottom" id="HGr-ka-Iqv"/>
+                <constraint firstItem="GGH-Ye-B6R" firstAttribute="top" secondItem="ypb-KY-8PD" secondAttribute="bottom" id="Thm-Uu-vcg"/>
+                <constraint firstAttribute="trailing" secondItem="p0c-DP-H0O" secondAttribute="trailing" id="YYi-da-sDY"/>
+                <constraint firstItem="ypb-KY-8PD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aUD-0O-9nr"/>
+                <constraint firstItem="GGH-Ye-B6R" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="d8K-9o-INT"/>
+                <constraint firstItem="ypb-KY-8PD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="juY-aL-UWw"/>
+                <constraint firstAttribute="trailing" secondItem="ypb-KY-8PD" secondAttribute="trailing" id="m2F-rO-H9S"/>
+                <constraint firstAttribute="trailing" secondItem="GGH-Ye-B6R" secondAttribute="trailing" id="wO8-pJ-A7k"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
 </document>

@@ -33,6 +33,8 @@ protocol OrderSetupViewOutput {
     
     func handleTap(fromCity: City?)
     func handleTap(toCity: City?)
+    
+    func handleFoundWeather(fromCity: City, toCity: City)
 
     func viewIsReady()
 }

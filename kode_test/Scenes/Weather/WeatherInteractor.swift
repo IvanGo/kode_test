@@ -10,4 +10,11 @@ class WeatherInteractor: WeatherInteractorInput {
 
     weak var output: WeatherInteractorOutput!
 
+    func fetchWeather(forCity: City) {
+        NetworkManager.requestWeather(cityName: forCity.name, succsed: { (weatherArray, city) in
+            self.output.present(weather: weatherArray, cityName: city)
+        }) { (_) in
+            
+        }
+    }
 }

@@ -13,11 +13,13 @@
             <connections>
                 <outlet property="adultsStepper" destination="Ttm-50-LyO" id="JA8-Ae-UFj"/>
                 <outlet property="babyStepper" destination="Ktj-7f-OOf" id="mCC-A7-frv"/>
+                <outlet property="fromDateSelector" destination="AmZ-Ix-rhw" id="nuK-0J-Tu8"/>
                 <outlet property="fromDescriptionLabel" destination="RgT-Ir-YXT" id="m5c-bU-5sr"/>
                 <outlet property="fromIconImageView" destination="5Lq-ie-E3l" id="svb-0R-JXU"/>
                 <outlet property="fromLabel" destination="JV9-1j-7wL" id="XlH-P9-BAk"/>
                 <outlet property="kidsStepper" destination="Pxg-3d-53U" id="WEu-gx-MFB"/>
                 <outlet property="lineImageView" destination="dWA-Pu-a6Y" id="k1Z-wH-H9g"/>
+                <outlet property="toDateSelector" destination="O4h-aw-tKP" id="eFj-fC-rmi"/>
                 <outlet property="toDescriptionLabel" destination="KpA-uw-BCn" id="97Z-Dp-XRb"/>
                 <outlet property="toIconImageView" destination="r0Y-gY-tR3" id="lIJ-HI-amg"/>
                 <outlet property="toLabel" destination="pGk-77-eYZ" id="epw-Sf-lqm"/>
@@ -33,7 +35,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="urK-pz-Sb6">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="443"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="374.5"/>
                             <subviews>
                                 <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFl-Kz-my3">
                                     <rect key="frame" x="32" y="73" width="287" height="1"/>
@@ -109,30 +111,34 @@
                                     </constraints>
                                 </view>
                                 <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fRS-1r-5Cx">
-                                    <rect key="frame" x="0.0" y="278" width="375" height="1"/>
+                                    <rect key="frame" x="0.0" y="209.5" width="375" height="1"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="ZHA-g9-zXU"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AmZ-Ix-rhw">
-                                    <rect key="frame" x="32" y="172" width="130" height="90"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AmZ-Ix-rhw" customClass="DateSelector" customModule="kode_test" customModuleProvider="target">
+                                    <rect key="frame" x="32" y="172" width="130" height="13.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="90" id="FRR-xG-nMC"/>
                                         <constraint firstAttribute="width" constant="130" id="b7e-2a-M9u"/>
                                     </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="caption" value="Туда"/>
+                                    </userDefinedRuntimeAttributes>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O4h-aw-tKP">
-                                    <rect key="frame" x="178" y="172" width="130" height="90"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O4h-aw-tKP" customClass="DateSelector" customModule="kode_test" customModuleProvider="target">
+                                    <rect key="frame" x="178" y="172" width="130" height="13.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="130" id="aez-yy-BUt"/>
-                                        <constraint firstAttribute="height" constant="90" id="yRo-14-bjV"/>
                                     </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="caption" value="Обратно"/>
+                                    </userDefinedRuntimeAttributes>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ttm-50-LyO" customClass="PassengerStepper" customModule="kode_test" customModuleProvider="target">
-                                    <rect key="frame" x="32" y="303" width="80" height="116"/>
+                                    <rect key="frame" x="32" y="234.5" width="80" height="116"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="116" id="lhB-9p-x51"/>
@@ -144,7 +150,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pxg-3d-53U" customClass="PassengerStepper" customModule="kode_test" customModuleProvider="target">
-                                    <rect key="frame" x="128" y="303" width="80" height="116"/>
+                                    <rect key="frame" x="128" y="234.5" width="80" height="116"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="80" id="cz0-hk-oGf"/>
@@ -156,7 +162,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ktj-7f-OOf" customClass="PassengerStepper" customModule="kode_test" customModuleProvider="target">
-                                    <rect key="frame" x="224" y="303" width="80" height="116"/>
+                                    <rect key="frame" x="224" y="234.5" width="80" height="116"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="80" id="fvC-KT-2o8"/>
@@ -177,7 +183,7 @@
                                 <constraint firstItem="u5O-i5-ptX" firstAttribute="top" secondItem="KpA-uw-BCn" secondAttribute="bottom" constant="24" id="3Qv-rW-s2i"/>
                                 <constraint firstItem="fRS-1r-5Cx" firstAttribute="leading" secondItem="urK-pz-Sb6" secondAttribute="leading" id="420-Wc-4gT"/>
                                 <constraint firstItem="AmZ-Ix-rhw" firstAttribute="top" secondItem="u5O-i5-ptX" secondAttribute="bottom" constant="16" id="4rQ-LX-FMA"/>
-                                <constraint firstItem="fRS-1r-5Cx" firstAttribute="top" secondItem="AmZ-Ix-rhw" secondAttribute="bottom" constant="16" id="82p-vX-XH9"/>
+                                <constraint firstItem="fRS-1r-5Cx" firstAttribute="top" secondItem="AmZ-Ix-rhw" secondAttribute="bottom" constant="24" id="82p-vX-XH9"/>
                                 <constraint firstItem="RgT-Ir-YXT" firstAttribute="top" secondItem="JV9-1j-7wL" secondAttribute="bottom" id="AAA-xx-5pH"/>
                                 <constraint firstItem="JV9-1j-7wL" firstAttribute="top" secondItem="urK-pz-Sb6" secondAttribute="top" constant="16" id="HG5-kO-oum"/>
                                 <constraint firstItem="pGk-77-eYZ" firstAttribute="leading" secondItem="r0Y-gY-tR3" secondAttribute="trailing" constant="8" id="I9c-uf-9Gn"/>
@@ -185,7 +191,6 @@
                                 <constraint firstItem="r0Y-gY-tR3" firstAttribute="centerY" secondItem="pGk-77-eYZ" secondAttribute="centerY" id="K0K-rs-r0b"/>
                                 <constraint firstAttribute="bottom" secondItem="Ttm-50-LyO" secondAttribute="bottom" constant="24" id="OWI-6t-R5b"/>
                                 <constraint firstItem="O4h-aw-tKP" firstAttribute="leading" secondItem="AmZ-Ix-rhw" secondAttribute="trailing" constant="16" id="QRv-zo-M2M"/>
-                                <constraint firstItem="fRS-1r-5Cx" firstAttribute="top" secondItem="O4h-aw-tKP" secondAttribute="bottom" constant="16" id="S1D-D6-pp1"/>
                                 <constraint firstAttribute="trailing" secondItem="pGk-77-eYZ" secondAttribute="trailing" constant="16" id="S86-NB-3lu"/>
                                 <constraint firstItem="r0Y-gY-tR3" firstAttribute="top" secondItem="dWA-Pu-a6Y" secondAttribute="bottom" id="SSi-n8-CwP"/>
                                 <constraint firstItem="RgT-Ir-YXT" firstAttribute="width" secondItem="JV9-1j-7wL" secondAttribute="width" id="VKK-dK-j9G"/>
@@ -193,7 +198,7 @@
                                 <constraint firstItem="dWA-Pu-a6Y" firstAttribute="top" secondItem="5Lq-ie-E3l" secondAttribute="bottom" id="Wty-I1-jtp"/>
                                 <constraint firstItem="eOW-tE-DUq" firstAttribute="centerY" secondItem="iFl-Kz-my3" secondAttribute="centerY" id="YDU-fS-ihq"/>
                                 <constraint firstItem="JV9-1j-7wL" firstAttribute="centerY" secondItem="5Lq-ie-E3l" secondAttribute="centerY" id="ZKm-ye-dQh"/>
-                                <constraint firstItem="fRS-1r-5Cx" firstAttribute="top" secondItem="O4h-aw-tKP" secondAttribute="bottom" constant="16" id="b9U-my-gaY"/>
+                                <constraint firstItem="fRS-1r-5Cx" firstAttribute="top" secondItem="O4h-aw-tKP" secondAttribute="bottom" constant="24" id="b9U-my-gaY"/>
                                 <constraint firstItem="KpA-uw-BCn" firstAttribute="leading" secondItem="r0Y-gY-tR3" secondAttribute="trailing" constant="8" id="eI4-wc-0wy"/>
                                 <constraint firstAttribute="trailing" secondItem="u5O-i5-ptX" secondAttribute="trailing" id="fPB-d7-shc"/>
                                 <constraint firstAttribute="trailing" secondItem="eOW-tE-DUq" secondAttribute="trailing" constant="16" id="fby-gO-eW9"/>
@@ -226,11 +231,28 @@
                         <constraint firstItem="urK-pz-Sb6" firstAttribute="top" secondItem="1DH-54-IYj" secondAttribute="top" id="xsn-6j-gHm"/>
                         <constraint firstAttribute="trailing" secondItem="urK-pz-Sb6" secondAttribute="trailing" id="z2g-nJ-Ur5"/>
                     </constraints>
+                    <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="50"/>
                 </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cc3-xH-jEn">
+                    <rect key="frame" x="0.0" y="614" width="375" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="NnC-dj-Nyq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Погода">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="weatherButtonPressed:" destination="-1" eventType="touchUpInside" id="Mid-ZL-AV8"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="1DH-54-IYj" secondAttribute="bottom" id="A4f-iG-UpK"/>
+                <constraint firstAttribute="trailing" secondItem="Cc3-xH-jEn" secondAttribute="trailing" id="GiJ-fT-DIe"/>
                 <constraint firstItem="1DH-54-IYj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KFW-YB-RTi"/>
+                <constraint firstItem="Cc3-xH-jEn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="c7S-bM-KlP"/>
+                <constraint firstAttribute="bottom" secondItem="Cc3-xH-jEn" secondAttribute="bottom" constant="3" id="hLG-B9-VZ0"/>
                 <constraint firstAttribute="trailing" secondItem="1DH-54-IYj" secondAttribute="trailing" id="lbi-G4-CAu"/>
                 <constraint firstItem="1DH-54-IYj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yvz-WH-IGO"/>
             </constraints>

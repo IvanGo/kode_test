@@ -31,4 +31,9 @@ class Router {
         root.present(citiesList, animated: true, completion: nil)
     }
     
+    func showWeather(from: City, to: City) {
+        let weatherList = WeatherBuilder.buildController(fromCity: from, toCity: to)
+        root.pushViewController(weatherList, animated: true)
+    }
+    
 }

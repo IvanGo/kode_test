@@ -23,6 +23,9 @@ class OrderSetupViewController: UIViewController, OrderSetupViewInput {
     @IBOutlet weak var toIconImageView: UIImageView!
     @IBOutlet weak var lineImageView: UIImageView!
     
+    @IBOutlet weak var fromDateSelector: DateSelector!
+    @IBOutlet weak var toDateSelector: DateSelector!
+    
     var fromCity: City? = nil {
         didSet {
             fromLabel.text = fromCity?.name ?? "Откуда"
@@ -61,6 +64,10 @@ class OrderSetupViewController: UIViewController, OrderSetupViewInput {
         toLabel.addGestureRecognizer(toTapRecognizer)
         toLabel.isUserInteractionEnabled = true
         
+        fromDateSelector.date = Date()
+        fromDateSelector.isClearable = false
+        toDateSelector.date = nil
+        
         output.viewIsReady()
     }
     
@@ -84,6 +91,11 @@ class OrderSetupViewController: UIViewController, OrderSetupViewInput {
         toCity = temp
     }
     
+    @IBAction func weatherButtonPressed(_ sender: Any) {
+        if fromCity != nil && toCity != nil {
+            output.handleFoundWeather(fromCity: fromCity!, toCity: toCity!)
+        }
+    }
     
 }
 

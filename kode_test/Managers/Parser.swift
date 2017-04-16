@@ -24,4 +24,18 @@ class Parser {
         return results
     }
     
+    class func parse(weatherJson: JSON) -> [Weather] {
+        
+        var results = [Weather]()
+        
+        for (_, subjson) in weatherJson["list"] {
+            if let kelvin = subjson["main"]["temp"].float,
+                let date = subjson["dt_txt"].string {
+                results.append(Weather(temp: String(format: "%.2f", kelvin - 273.15), dateString: date))
+            }
+        }
+        
+        return results
+    }
+    
 }

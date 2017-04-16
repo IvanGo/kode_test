@@ -29,4 +29,8 @@ class OrderSetupPresenter: OrderSetupModuleInput, OrderSetupViewOutput, OrderSet
             self.view.fromCity = city
         }
     }
+    
+    func handleFoundWeather(fromCity: City, toCity: City) {
+        globalRouter?.showWeather(from: fromCity, to: toCity)
+    }
 }

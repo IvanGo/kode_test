@@ -18,6 +18,8 @@ protocol WeatherViewInput: class {
     */
 
     func setupInitialState()
+    
+    func display(from: [Weather], to: [Weather])
 }
 
 protocol WeatherViewOutput {
@@ -35,6 +37,7 @@ protocol WeatherViewOutput {
  Presenter layer 
  */
 protocol WeatherModuleInput: class {
+    
 }
 
 
@@ -44,8 +47,9 @@ protocol WeatherModuleInput: class {
  */
 
 protocol WeatherInteractorInput {
+    func fetchWeather(forCity: City)
 }
 
 protocol WeatherInteractorOutput: class {
-
+    func present(weather: [Weather], cityName: String)
 }

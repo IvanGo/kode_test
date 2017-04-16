@@ -9,5 +9,10 @@
 import Foundation
 
 struct City {
-    var name: String
+    let name: String
+}
+
+struct Weather {
+    let temp: String
+    let dateString: String
 }

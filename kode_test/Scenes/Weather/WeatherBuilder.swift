@@ -8,11 +8,11 @@
 
 class WeatherBuilder {
 
-    class func buildControllerForDefault() -> WeatherViewController {
+    class func buildController(fromCity: City, toCity: City) -> WeatherViewController {
         let controller = WeatherViewController(nibName: "WeatherViewController", bundle: nil)
 	
         let configurator = WeatherModuleConfigurator()
-        configurator.configureModuleForViewInput(viewInput: controller)
+        configurator.configureModuleForViewInput(viewInput: controller, fromCity: fromCity, toCity: toCity)
     	
         return controller
     }
