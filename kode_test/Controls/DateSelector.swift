@@ -73,14 +73,28 @@ class DateSelector: UIView {
         addDateButton.layer.cornerRadius = 4
         addDateButton.layer.borderColor  = UIColor.white.cgColor
         addDateButton.layer.borderWidth  = 1
+        addDateButton.isUserInteractionEnabled = false
         
         clearButton = initAndPlace(ofType: UIButton.self)
+        clearButton.setTitle("X", for: .normal)
+        clearButton.addTarget(self, action: #selector(clear), for: .touchUpInside)
         
         captionLabel.textColor = UIColor.white.withAlphaComponent(0.5)
         captionLabel.font = UIFont.systemFont(ofSize: 11)
         
         dateLabel.textColor = UIColor.white
         dateLabel.font = UIFont.systemFont(ofSize: 14)
+        
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(showController))
+        addGestureRecognizer(tapRecognizer)
+    }
+    
+    func showController() {
+        let controller = DateSelectorViewController()
+        controller.sender = self
+        controller.modalPresentationStyle = .overCurrentContext
+        controller.modalTransitionStyle = .crossDissolve
+        UIApplication.shared.windows.first?.rootViewController?.present(controller, animated: true, completion: nil)
     }
     
     private func placeViews() {
@@ -96,8 +110,13 @@ class DateSelector: UIView {
         }
         
         addDateButton.snp.makeConstraints { (make) in
-            make.center.equalToSuperview()
+            make.center.equalToSuperview().offset(4)
             make.width.equalToSuperview().multipliedBy(0.7)
+        }
+        
+        clearButton.snp.makeConstraints { (make) in
+            make.centerY.equalToSuperview()
+            make.right.equalToSuperview()
         }
     }
     
@@ -113,7 +132,11 @@ class DateSelector: UIView {
         addDateButton.isHidden = true
         captionLabel.isHidden = false
         dateLabel.isHidden = false
-        clearButton.isHidden = isClearable
+        clearButton.isHidden = !isClearable
+    }
+    
+    func clear() {
+        date = nil
     }
     
     private func initAndPlace<T>( ofType: T.Type) -> T where T: UIView {
@@ -138,11 +161,59 @@ class DateSelector: UIView {
 
 class DateSelectorViewController: UIViewController {
     
+    var sender: DateSelector? = nil
+    
+    let picker = UIDatePicker()
+    let okButton = UIButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.black.withAlphaComponent(0.45)
+        view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
         
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(close))
+        self.view.addGestureRecognizer(tapRecognizer)
+        
+        picker.minimumDate = Date()
+        picker.datePickerMode = .date
+        picker.backgroundColor = .white
+        
+        view.addSubview(picker)
+        picker.translatesAutoresizingMaskIntoConstraints = false
+        picker.snp.makeConstraints { (make) in
+            make.left.right.bottom.equalToSuperview()
+        }
+        
+        okButton.setTitle("OK", for: .normal)
+        okButton.addTarget(self, action: #selector(okPressed), for: .touchUpInside)
+        view.addSubview(okButton)
+        okButton.translatesAutoresizingMaskIntoConstraints = false
+        okButton.snp.makeConstraints { (make) in
+            make.bottom.equalTo(picker.snp.top)
+            make.right.equalToSuperview()
+            make.width.equalTo(100)
+        }
+        
+        picker.transform   = CGAffineTransform(translationX: 0, y: 250)
+        okButton.transform = CGAffineTransform(translationX: 0, y: 250)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        UIView.animate(withDuration: 0.2) { 
+            self.picker.transform = .identity
+            self.okButton.transform = .identity
+        }
+    }
+    
+    func okPressed() {
+        sender?.date = picker.date
+        close()
+    }
+    
+    func close() {
+        dismiss(animated: true, completion: nil)
     }
     
 }

@@ -64,9 +64,10 @@ class OrderSetupViewController: UIViewController, OrderSetupViewInput {
         toLabel.addGestureRecognizer(toTapRecognizer)
         toLabel.isUserInteractionEnabled = true
         
-        fromDateSelector.date = Date()
         fromDateSelector.isClearable = false
+        fromDateSelector.date = Date()
         toDateSelector.date = nil
+        toDateSelector.isClearable = true
         
         output.viewIsReady()
     }
